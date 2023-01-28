@@ -59,3 +59,12 @@ layout: default
   {%- endif -%}
 
 </div>
+<div clasd="w3-panel w3-pale-yellow">
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+</div>
